@@ -1,19 +1,71 @@
-/* 
+body {
+	display: flex;
+	flex-direction: column;
+	background-image: url("../images/pattern1.png");
+	font-family: "Times New Roman", serif;
+	color: #000000;
+	font-size: 14px;
+	width: 900px;
+	margin: 0 auto;
+}
 
-Style Hints: 
+img {
+	width: 900px;
+	background-position: center;
+}
 
-Body Font Size = 14px
-	 Font Family = "Times New Roman", serif
-	 Font Color = black
-	 Background: #F3EBE9
+.page {
+	background: #F3EBE9;
+	padding: 30px 20px;
+}
 
-H1 Font Size = 50px
-   Font Family = Arial, Helvetica, sans-serif
-   Text-transform: uppercase;
-   color: #FFFFFF;	(White)
+.page h2 {
+	text-decoration: underline;
+	padding: 0;
+	margin-bottom: 10px;
+}
 
-H2: Font Size = 18px
-	Text-Transform: uppercase;
-	Font-Family: cursive, Helvetica, sans-serif;
+.page p {
+	text-align: justify;
+	margin-bottom: 20px;
+}
 
-*/
+header, footer {
+	background: #F0776E;
+}
+
+h1 {
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #FFFFFF;
+	font-size: 50px;
+	text-transform: uppercase;
+	padding: 10px;
+	padding-bottom: 0;
+}
+
+h2 {
+	font-family: cursive, "Helvetica", sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 0 10px 20px 10px;
+}
+
+.photos {
+	display: flex;
+	justify-content: space-around;
+}
+
+.photo {
+	display: inline-block;
+	width: 200px;
+	border: solid 3px #CCCCCC;
+}
+
+footer {
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-start;
+	color: #FFFFFF;
+	padding: 10px;
+	padding-bottom: 40px
+}
